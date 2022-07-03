@@ -205,7 +205,7 @@ Then, we trained the Logistic Regression model using the resampled data and calc
 
 ![smoteenn_sm](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_cm.png)
 
-![smoteenn_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_report.png)
+![smoteenn_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteen_report2.png)
 
 The results with SMOTEENN are similar to oversampling. The accuracy is 0.65, and the metrics of the minority class(precision, recall, and F1 score) are not
 great, which indicates an imbalance between sensitivity and precision. This model is still not the best at classifying high-risk applications.
