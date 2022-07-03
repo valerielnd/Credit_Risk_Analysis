@@ -37,11 +37,11 @@ Before we start building our models, the first step is to prepare the data.
 
 We read the data file into a dataFrame:
 
-![load_data]()
+![load_data](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/load_data.png)
 
 The dataset includes the following columns:
 
-![data_columns]()
+![data_columns](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/data_columns.png)
 
 So the dataFrame reveals one target: "loan_status," and all the other columns are features.
  
@@ -52,47 +52,47 @@ removed from the dataFrame any loan data that have the status "Issued"
 
 Then we convert the interest rate to a number and the target column values to low_risk and high_risk based on their values:
 
-![final_data_prep]()
+![final_data_prep](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/final_data_prep.png)
 
 Machine learning algorithms typically only work with numerical data, categorical and text data must be converted to numerical data.
 
 The following columns were encoded using the get_dummies() method wile defining the feature set:
 
-![encoded_columns]()
+![encoded_columns](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/encoded_columns.png)
 
-![feature_set]()
+![feature_set](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/feature_set.png)
 
 We created our target set and check its balance:
 
-![target_set]()
+![target_set](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/target_set.png)
 
-![target_set_balance]()
+![target_set_balance](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/target_set_balance.png)
 
 As predicted, the existing classes in the dataset aren't equally represented.
 
 Next, we split the data into training and testing sets. The models use the training dataset to learn from it. 
 They will use the testing dataset to assess their performance. When splitting the data, we stratified it to divide it proportionally:
 
-![split_data]()
+![split_data](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/split_data.png)
 
 Since the imbalance between the two classes (high-risk and low-risk) can cause our models to be biased toward the majority class, 
 we oversampled the minority class with the RandomOverSampler algorithm.
 
-![resample_naive]()
+![resample_naive](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/resampled_naive.png)
 
 As we can see, the minority class has been enlarged.
 
 After preprocessing the features data, the logistic regression model, a popular classification model, is created and trained:
 
-![regression_oversampling]()
+![regression_oversampling](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/regression_oversampling.png)
 
 After fitting the model, we ran the following code to make predictions using the testing data:
 
-![regression_over_predictions]()
+![regression_over_predictions](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/regression_over_predictions.png)
 
 We evaluated how well our model classifies loan applications by creating a confusion matrix: a table of true positives, false positives, true negatives, and false negatives.
 
-![oversampling_cm]()
+![oversampling_cm](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/oversampling_cm.png)
 
 The results show that:
 
@@ -103,13 +103,13 @@ The results show that:
 
 Next, we determined the model accuracy:
 
-![oversampling_accuracy]()
+![oversampling_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/oversamplig_accuracy.png)
 
 The model achieved an accuracy score of 0.62. This value is not large enough to suspect overfitting.
 
 Finally, we used the classification_report_imbalanced method to get the precision, sensitivity, and F1 score associated with the classes of the model:
 
-![oversampling_report]()
+![oversampling_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/oversampling_report.png)
 
 The precision for high-risk application is 0.01, which indicate a large number of false positives, while it is perfect for low-risk application.
 
@@ -146,10 +146,10 @@ To evaluate the performance of the model, we calculated the balanced accuracy sc
 
 The results show that:
 
-* Out of 87 High-Risk applications, 56 were predicted to be High-Risk.
-* Out of 87 High-Risk applications, 31 were predicted to be low-Risk.
-* Out of 17118 low-Risk applications, 5840	 were predicted to be high-Risk.
-* Out of 17118 low-Risk applications, 11278 were predicted to be low-Risk.
+* Out of 87 High-Risk applications, 63 were predicted to be High-Risk.
+* Out of 87 High-Risk applications, 24 were predicted to be low-Risk.
+* Out of 17118 low-Risk applications, 7256	 were predicted to be high-Risk.
+* Out of 17118 low-Risk applications, 9862 were predicted to be low-Risk.
 
 Looking at the report and the accuracy value, the metrics of the minority class(precision, recall, and F1 score) have
 slightly improved. However, this model is still not the best at classifying high-risk applications.
