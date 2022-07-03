@@ -222,17 +222,17 @@ The first ensemble algorithm we used is the Balanced Random Forest Classifier wh
 
 To proceed, we resampled the training data with the BalancedRandomForestClassifier:
 
-![brf_resample]()
+![brf_resample](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/brf_resample.png)
 
 Then, we calculate our predictions:
 
 To evaluate the performance of the model, we calculated the balanced accuracy score and the confusion matrix and printed the imbalanced classification report:
  
-![brf_accuracy]()
+![brf_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/brf_accuracy.png)
 
-![brf_sm]()
+![brf_sm](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/brf_cm.png)
 
-![brf_report]()
+![brf_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/brf_report.png)
 
 
 The results show that:
@@ -254,11 +254,9 @@ To proceed, we resampled the training data with the EasyEnsembleClassifier:
 
 After the data is resampled, calculate the accuracy score of the model, generate a confusion matrix, and then print out the imbalanced classification report:
 
-![eec_accuracy]()
+![eec_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/eec_accuracy.png)
 
-![eec_sm]()
-
-![eec_report]()
+![eec_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/eec_report.png)
 
 The results show that:
 
