@@ -130,19 +130,19 @@ to state that it will be good at classifying high-risk applications.
 As modeling is an iterative process, we decided to sample the dataset this time using SMOTE, another oversampling 
 approach to deal with unbalanced datasets.
 
-![smote_resampling]()
+![smote_resampling](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smote_resample.png)
 
 Then, we trained the Logistic Regression model using the resampled data and calculated the predictions:
 
-![smote_predictions]()
+![smote_predictions](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smote_predictions.png)
 
 To evaluate the performance of the model, we calculated the balanced accuracy score, and the confusion matrix and printed the imbalanced classification report:
 
-![smote_accuracy]()
+![smote_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smote_accuracy.png)
 
-![smote_sm]()
+![smote_sm](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smote_cm.png)
 
-![smote_report]()
+![smote_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smote_report.png)
 
 The results show that:
 
@@ -161,19 +161,19 @@ Instead of increasing the number of the minority class, the size of the majority
 
 To proceed, we used the Cluster centroid undersampling algorithm and resampled the training data:
 
-![cc_resample]()
+![cc_resample](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/cc_resample.png)
 
 Then, we trained the Logistic Regression model using the resampled data and calculated the predictions:
 
-![cc_predictions]()
+![cc_predictions](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/cc_predictions.png)
 
  To evaluate the performance of the model, we calculated the balanced accuracy score, and the confusion matrix and printed the imbalanced classification report:
  
-![cc_accuracy]()
+![cc_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/cc_accuracy.png)
 
-![cc_sm]()
+![cc_sm](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/cc_cm.png)
 
-![cc_report]()
+![cc_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/cc_report.png)
 
 The results show that:
 
@@ -193,19 +193,19 @@ an approach to resampling that combines aspects of both oversampling and undersa
 
 To proceed, we resampled the dataset:
 
-![smoteenn_resample]()
+![smoteenn_resample](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_resample.png)
 
 Then, we trained the Logistic Regression model using the resampled data and calculated the predictions:
 
-![smoteenn_predictions]()
+![smoteenn_predictions](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_predictions.png)
 
  To evaluate the performance of the model, we calculated the balanced accuracy score and the confusion matrix and printed the imbalanced classification report:
  
-![smoteenn_accuracy]()
+![smoteenn_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_accuracy.png)
 
-![smoteenn_sm]()
+![smoteenn_sm](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_cm.png)
 
-![smoteenn_report]()
+![smoteenn_report](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/smoteenn_report.png)
 
 The results with SMOTEENN are similar to oversampling. The accuracy is 0.65, and the metrics of the minority class(precision, recall, and F1 score) are not
 great, which indicates an imbalance between sensitivity and precision. This model is still not the best at classifying high-risk applications.
