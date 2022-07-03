@@ -146,10 +146,10 @@ To evaluate the performance of the model, we calculated the balanced accuracy sc
 
 The results show that:
 
-* Out of 87 High-Risk applications, 63 were predicted to be High-Risk.
-* Out of 87 High-Risk applications, 24 were predicted to be low-Risk.
-* Out of 17118 low-Risk applications, 7256	 were predicted to be high-Risk.
-* Out of 17118 low-Risk applications, 9862 were predicted to be low-Risk.
+* Out of 87 High-Risk applications, 56 were predicted to be High-Risk.
+* Out of 87 High-Risk applications, 31 were predicted to be low-Risk.
+* Out of 17118 low-Risk applications, 5840	 were predicted to be high-Risk.
+* Out of 17118 low-Risk applications, 11278 were predicted to be low-Risk.
 
 Looking at the report and the accuracy value, the metrics of the minority class(precision, recall, and F1 score) have
 slightly improved. However, this model is still not the best at classifying high-risk applications.
