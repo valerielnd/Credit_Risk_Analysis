@@ -252,6 +252,8 @@ We build our final model using Easy Ensemble AdaBoost Classifier.
 
 To proceed, we resampled the training data with the EasyEnsembleClassifier:
 
+![eec_resample](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/eec_resample.png)
+
 After the data is resampled, calculate the accuracy score of the model, generate a confusion matrix, and then print out the imbalanced classification report:
 
 ![eec_accuracy](https://github.com/valerielnd/Credit_Risk_Analysis/blob/main/Resources/eec_accuracy.png)
